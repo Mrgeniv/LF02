@@ -58,17 +58,33 @@ public class Mannschaft {
         }
 
         motivation += torwart.getMotivation();
-        motivationMittelwert = motivation / (spielerArrayList.size()+1);
-        return motivation;
+        motivationMittelwert = motivation / (spielerArrayList.size() + 1);
+        return motivationMittelwert;
     }
 
     public int getStearke() {
-        for (Spieler s : spielerArrayList){
+        for (Spieler s : spielerArrayList) {
             stearke += s.getStearke();
 
         }
         stearke += torwart.getMotivation();
-        stearkeMittelwert = stearke / (spielerArrayList.size()+1);
-        return stearke;
+        stearkeMittelwert = stearke / (spielerArrayList.size() + 1);
+        return stearkeMittelwert;
     }
+
+    @Override
+    public String toString() {
+        String text = "Name = " + name;
+        text += "\n\tTrainer = " + trainer;
+        text += "\n\tTorwart = " + torwart;
+        text += "\n\tSpieler = " + getSpielerArrayList();
+        text += "\n\tMotivation = " + motivation;
+        text += "\n\tMannschaffts Motivation = " + motivationMittelwert;
+        text += "\n\tStärke = " + stearke;
+        text += "\n\tMannschaffts Stärke = " + motivationMittelwert;
+
+        return text;
+
+    }
+
 }
