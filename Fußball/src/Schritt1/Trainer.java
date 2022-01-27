@@ -1,3 +1,5 @@
+package Schritt1;
+
 public class Trainer extends Person {
 
     private  int erfahrung;

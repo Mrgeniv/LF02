@@ -1,3 +1,5 @@
+package Schritt1;
+
 public abstract class Person {
 
     private String Name;

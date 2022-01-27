@@ -1,3 +1,5 @@
+package Schritt1;
+
 import java.util.ArrayList;
 
 public class Mannschaft {
@@ -75,9 +77,9 @@ public class Mannschaft {
     @Override
     public String toString() {
         String text = "Name = " + name;
-        text += "\n\tTrainer = " + trainer;
-        text += "\n\tTorwart = " + torwart;
-        text += "\n\tSpieler = " + getSpielerArrayList();
+        text += "\n\tSchritt1.Trainer = " + trainer;
+        text += "\n\tSchritt1.Torwart = " + torwart;
+        text += "\n\tSchritt1.Spieler = " + getSpielerArrayList();
         text += "\n\tMotivation = " + motivation;
         text += "\n\tMannschaffts Motivation = " + motivationMittelwert;
         text += "\n\tStärke = " + stearke;

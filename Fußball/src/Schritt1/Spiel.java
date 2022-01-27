@@ -1,3 +1,5 @@
+package Schritt1;
+
 public class Spiel {
 
     private String name;
@@ -28,7 +30,7 @@ public class Spiel {
     @Override
     public String toString() {
         String text = "Name = " + name ;
-        text += "\n\tMannschaft Heim = " + Heim ;
+        text += "\n\tSchritt1.Mannschaft Heim = " + Heim ;
         text += "\n\tMAnnschaft Gast = " + Gast ;
         text += "\n\tErgebnis = " + ergebnis;
         text += "\n\tSpielverlauf = " + spielverlauf;

@@ -1,3 +1,5 @@
+package Schritt1;
+
 public class Torwart extends Spieler{
     private int reaktion;
 

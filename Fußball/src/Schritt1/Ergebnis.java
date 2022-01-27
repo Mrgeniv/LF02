@@ -1,3 +1,5 @@
+package Schritt1;
+
 public class Ergebnis {
 
     private int toreHeim;
