@@ -71,7 +71,7 @@ public class Spieler {
 
     @Override
     public  String toString(){
-        String text = "Name = " + getName();
+        String text = "\n\tName = " + getName();
         text += "\n\tAlter = " + getAlter();
         text += "\n\tStärke = " + stearke;
         text += "\n\tTorschuss = " + torschuss;

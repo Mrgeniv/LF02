@@ -26,6 +26,40 @@ public class Programm {
         spielerListe1.add(spieler6);
         spielerListe1.add(spieler7);
 
+        System.out.println(team1);
+        System.out.println(trainer1);
+        System.out.println(torwart1);
+        System.out.println("<~~~~~~~~~~~~~~~~~~~~~~~~~>");
+        System.out.println(spielerListe1);
+        System.out.println("<~~~~~~~~~~~~~~~~~~~~~~~~~>");
+
+
+        Trainer trainer2 = new Trainer("Mika",44,8);
+        Torwart torwart2 = new Torwart("Lucas",23,9,10,9);
+        ArrayList<Spieler> spielerListe2 = new ArrayList<>();
+        Mannschaft team2 = new Mannschaft("Bayern München", trainer1,torwart1,spielerListe1,0,0);
+        Spieler sp1 = new Spieler("Lukas",24,6,5,10,11);
+        Spieler sp2 = new Spieler("Achmed",24,9,9,6,5);
+        Spieler sp3 = new Spieler("Noah",28,7,3,8,16);
+        Spieler sp4 = new Spieler("Chan",22,9,5,10,20);
+        Spieler sp5 = new Spieler("Boris",19,0,0,3,0);
+        Spieler sp6 = new Spieler("Lucas",23,6,2,5,21);
+        Spieler sp7 = new Spieler("Aaron",19,6,7,6,19);
+
+
+        spielerListe1.add(sp1);
+        spielerListe1.add(sp2);
+        spielerListe1.add(sp3);
+        spielerListe1.add(sp4);
+        spielerListe1.add(sp5);
+        spielerListe1.add(sp6);
+        spielerListe1.add(sp7);
+
+        System.out.println(team2);
+        System.out.println(trainer2);
+        System.out.println(torwart2);
+        System.out.println("<~~~~~~~~~~~~~~~~~~~~~~~~~>");
+
 
     }
 }

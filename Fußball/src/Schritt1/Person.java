@@ -29,7 +29,7 @@ public abstract class Person {
 
     @Override
     public  String toString(){
-        String text = "Name = " + getName();
+        String text = "\n\tName = " + getName();
         text += "\n\t"+ "Alter = " + getAlter();
 
         return text;

@@ -76,7 +76,7 @@ public class Mannschaft {
 
     @Override
     public String toString() {
-        String text = "Name = " + name;
+        String text = "\n\t" + name;
         text += "\n\tSchritt1.Trainer = " + trainer;
         text += "\n\tSchritt1.Torwart = " + torwart;
         text += "\n\tSchritt1.Spieler = " + getSpielerArrayList();

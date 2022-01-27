@@ -21,7 +21,7 @@ public class Trainer extends Person {
 
     @Override
     public  String toString(){
-        String text =""+ getName();
+        String text ="\n\tName = "+ getName();
         text += "\n\t" + "Alter = " + getAlter();
         text += "\n\t" + "Erfahrung =" + erfahrung;
 
