@@ -65,9 +65,10 @@ public class Spieler {
         this.tore = tore;
     }
 
-    public int getTore() {
+    public int addTore() {
         return tore;
     }
+
 
     @Override
     public  String toString(){
