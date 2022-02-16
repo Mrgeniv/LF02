@@ -15,9 +15,10 @@ public class Girokonto extends Konto {
         this.zinsKredit = zinsKredit;
     }
 
-    public boolean ueberweisung(double betrag, Girokonto girokonto){
+    public boolean ueberweisen(double betrag, Girokonto girokonto){
         if (auszahlen(betrag)){
             girokonto.einzahlen(betrag);
+            System.out.println(girokonto);
             return true;
         } else {
             return false;

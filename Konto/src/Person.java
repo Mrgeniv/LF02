@@ -37,9 +37,15 @@ public abstract class Person {
 
     @Override
     public String toString() {
-        return
-                "\n vorname= " + vorname +
-                "\n nachname= " + nachname +
-                "\n adresse= " + adresse;
+        String text;
+        text=   "\n Vorname: " + getVorname() +"\n"+
+                " Nachname: " + getNachname() +"\n"+
+                " Adresse: ";
+        if (adresse != null){
+            text=text+adresse;
+        } else {
+            text = text+"Keine Angabe";
+        }
+        return text;
     }
 }

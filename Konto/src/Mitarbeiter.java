@@ -6,6 +6,9 @@ public class Mitarbeiter extends Person {
 
     @Override
     public String toString() {
-        return super.toString();
+
+        return  "\n Vorname: " + getVorname() +
+                "\n Nachname: " + getNachname() +
+                "\n Adresse: " + getAdresse();
     }
 }

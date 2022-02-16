@@ -37,8 +37,10 @@ public abstract class Konto {
         this.zinsguthaben = zinsguthaben;
     }
 
-    public void einzahlen(double betrag){
+    public boolean einzahlen(double betrag){
         betrag += kontostand;
+        System.out.println("Sie haben "+ betrag + "eingezahlt.");
+        return false;
     }
 
     public boolean auszahlen(double betrag){
@@ -53,10 +55,12 @@ public abstract class Konto {
 
     @Override
     public String toString() {
-        return "[Konto]" + super.toString()+
-                "\n inhaber=" + inhaber +
-                "\n kontostand=" + kontostand +
-                "\n kreditlimit=" + kreditlimit +
-                "\n zinsguthaben=" + zinsguthaben;
+
+        return
+
+                "\n [INHABER] " + inhaber +
+                "\n kontostand: " + kontostand +
+                "\n kreditlimit: " + kreditlimit +
+                "\n zinsguthaben: " + zinsguthaben;
     }
 }
