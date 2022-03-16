@@ -6,6 +6,8 @@ public class Vertragspartner {
     private Adresse adresse;
 
     public Vertragspartner(String vorname, String nachname){
+        this.vorname=vorname;
+        this.nachname=nachname;
 
     }
 
@@ -43,11 +45,10 @@ public class Vertragspartner {
 
     @Override
     public String toString() {
-        return "Vertragspartner{" +
-                "vorname='" + vorname + '\'' +
-                ", nachname='" + nachname + '\'' +
-                ", ausweisNr='" + ausweisNr + '\'' +
-                ", adresse=" + adresse +
-                '}';
+        String text = "\nVorname: \t" +getVorname();
+        text+= "\nNachname: \t" +getNachname();
+        text+= "\nAusweisNr: \t" +getAusweisNr();
+        text+= "\nAdresse: \t" +getAdresse();
+        return text;
     }
 }
