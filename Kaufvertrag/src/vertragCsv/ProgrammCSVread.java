@@ -1,10 +1,9 @@
-import javax.management.MBeanAttributeInfo;
+package vertragCsv;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 
 public class ProgrammCSVread {
-
     private static void erstelleCSV(Kaufvertrag kaufvertrag) throws IOException {
 
         String datei = "H:/LF02/Kaufvertrag/src/Kaufvertrag.csv";
