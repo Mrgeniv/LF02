@@ -13,18 +13,18 @@ public class ProgrammCSVwrite {
         String datei = "H:/LF02/Kaufvertrag/src/Kaufvertrag.csv";
         PrintWriter writer= new PrintWriter(datei);
 
-        writer.print("Partner;"+"Name;"+"AusweisNr.;"+"Plz;"+"Ort;"+"Strasse;"+"HausNr.;"+"\n");
+        writer.print("Partner;"+"Name;"+"Strasse;"+"Plz;"+"Ort;"+"\n");
         writer.print("Kaeufer;");
-        writer.print(kaufvertrag.getKaeufer().getVorname()+" "+kaufvertrag.getKaeufer().getNachname()+";");
-        writer.print(kaufvertrag.getKaeufer().getAusweisNr()+";"+kaufvertrag.getKaeufer().getAdresse().getPlz()+";"
-                +kaufvertrag.getKaeufer().getAdresse().getOrt()+";"+ kaufvertrag.getKaeufer().getAdresse().getStrasse()+";"
-                +kaufvertrag.getKaeufer().getAdresse().getHausNr()+"\n");
+        writer.print(kaufvertrag.getKaeufer().getNachname()+", "+kaufvertrag.getKaeufer().getVorname()+";");
+        writer.print(kaufvertrag.getKaeufer().getAdresse().getStrasse()+" "+kaufvertrag.getKaeufer().getAdresse().getHausNr()+";"+kaufvertrag.getKaeufer().getAdresse().getPlz()+";"
+                +kaufvertrag.getKaeufer().getAdresse().getOrt()+";"+
+                "\n");
 
         writer.print("Verkaeufer;");
-        writer.print(kaufvertrag.getVerkaeufer().getVorname()+" "+kaufvertrag.getVerkaeufer().getNachname()+";");
-        writer.print(kaufvertrag.getVerkaeufer().getAusweisNr()+";"+kaufvertrag.getVerkaeufer().getAdresse().getPlz()+";"
-                +kaufvertrag.getVerkaeufer().getAdresse().getOrt()+";"+ kaufvertrag.getVerkaeufer().getAdresse().getStrasse()+";"
-                +kaufvertrag.getVerkaeufer().getAdresse().getHausNr()+"\n");
+        writer.print(kaufvertrag.getVerkaeufer().getNachname()+", "+kaufvertrag.getVerkaeufer().getVorname()+";");
+        writer.print(kaufvertrag.getVerkaeufer().getAdresse().getStrasse()+", "+kaufvertrag.getVerkaeufer().getAdresse().getHausNr()+";"+kaufvertrag.getVerkaeufer().getAdresse().getPlz()+";"
+                +kaufvertrag.getVerkaeufer().getAdresse().getOrt()+";"
+                +"\n");
 
         writer.close();
 
